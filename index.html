@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohanned Mohammed Galal Mohammed | AI & Data Science Portfolio</title>
+  <meta name="description" content="Official portfolio of Mohanned Mohammed Galal Mohammed — Computer Science student (Data Science & AI Track) at October 6 University, aspiring AI Engineer.">
+  <meta name="keywords" content="Mohanned Mohammed Galal Mohammed, AI, Data Science, Computer Science, October 6 University, Machine Learning, C++, Python">
+  <meta name="author" content="Mohanned Mohammed Galal Mohammed">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mohanned Mohammed Galal Mohammed | AI & Data Science Portfolio">
+  <meta property="og:description" content="Official portfolio of Mohanned Mohammed Galal Mohammed — Computer Science (Data Science & AI Track) at October 6 University. Discover projects, training, and certificates.">
+  <meta property="og:image" content="image/profile.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="image/profile.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-dark text-light antialiased selection-brand">
+
+  <!-- Ambient Interactive Glow Background -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+  <canvas id="neuralCanvas" class="neural-canvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <header id="navbar" class="navbar-wrapper">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Mohanned Mohammed Galal Mohammed Home">
+        <span class="brand-icon">MG</span>
+        <div class="brand-text-wrap">
+          <span class="brand-name">Mohanned Mohammed Galal Mohammed</span>
+          <small class="brand-sub">AI &bull; Data Science &bull; Technology</small>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav class="nav-links-desktop" aria-label="Main Navigation">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#certificates" class="nav-link">Certificates</a>
+        <a href="#languages" class="nav-link">Languages</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Nav Action Button & Mobile Toggle -->
+      <div class="nav-actions">
+        <a href="Mohanned_Galal_CV.pdf" download class="btn btn-outline-glow btn-sm" title="Download CV">
+          <i class="fa-solid fa-file-arrow-down"></i>
+          <span>CV</span>
+        </a>
+        <button id="mobileMenuBtn" class="hamburger-btn" aria-label="Toggle Navigation Menu" aria-expanded="false">
+          <span class="bar bar-1"></span>
+          <span class="bar bar-2"></span>
+          <span class="bar bar-3"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobileDrawer" class="mobile-drawer" aria-hidden="true">
+      <div class="mobile-drawer-inner">
+        <a href="#hero" class="mobile-nav-link">Home</a>
+        <a href="#about" class="mobile-nav-link">About</a>
+        <a href="#skills" class="mobile-nav-link">Skills</a>
+        <a href="#projects" class="mobile-nav-link">Projects</a>
+        <a href="#education" class="mobile-nav-link">Education</a>
+        <a href="#certificates" class="mobile-nav-link">Certificates</a>
+        <a href="#languages" class="mobile-nav-link">Languages</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+        <div class="mobile-drawer-cta">
+          <a href="Mohanned_Galal_CV.pdf" download class="btn btn-primary w-full">
+            <i class="fa-solid fa-file-arrow-down"></i> Download CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="section-container hero-grid">
+        <!-- Hero Text Content -->
+        <div class="hero-content reveal-on-scroll">
+          <div class="badge-pill">
+            <span class="status-indicator"></span>
+            <span>AI &bull; Data Science &bull; Technology</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <br><span class="gradient-text">Mohanned Mohammed Galal Mohammed</span>
+          </h1>
+
+          <div class="hero-typewriter-container">
+            <span class="typewriter-prefix">Focus:</span>
+            <span id="typewriter" class="typewriter-text">AI & Data Science</span>
+            <span class="typewriter-cursor">|</span>
+          </div>
+
+          <p class="hero-description">
+            Passionate about technology, data, problem solving, and building practical digital solutions. Developing my skills toward becoming a professional <strong>AI Engineer</strong>.
+          </p>
+
+          <!-- Interactive Code Snippet from original portfolio -->
+          <div class="hero-code-box">
+            <div class="code-box-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="code-title">growth_mindset.cpp</span>
+            </div>
+            <pre class="code-content"><code><span class="keyword">while</span> (learning) {
+    build();
+    solveProblems();
+    keepGrowing();
+}</code></pre>
+          </div>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore My Projects</span>
+              <i class="fa-solid fa-arrow-down"></i>
+            </a>
+            <a href="Mohanned_Galal_CV.pdf" download class="btn btn-secondary">
+              <i class="fa-solid fa-file-arrow-down"></i>
+              <span>Download CV</span>
+            </a>
+            <a href="#contact" class="btn btn-outline-glow">
+              <span>Contact Me</span>
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+
+          <!-- Social Quick Links -->
+          <div class="hero-socials">
+            <span class="socials-label">Connect:</span>
+            <a href="https://www.linkedin.com/in/mohanned-galal-0a018b415" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://wa.me/201159495931" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WhatsApp" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://github.com/mohannedelzainy-ctrl" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:mohannedelzainy@gmail.com" class="social-link" aria-label="Email" title="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <!-- Hero Visual Profile Card -->
+        <div class="hero-visual reveal-on-scroll">
+          <div class="profile-card-wrapper">
+            <div class="profile-frame">
+              <div class="profile-glow"></div>
+              <div class="profile-image-container">
+                <img src="image/profile.jpg.jpeg" alt="Mohanned Mohammed Galal Mohammed" class="profile-img" onerror="this.onerror=null; this.src='image/profile.jpg';">
+                <div class="profile-overlay-gradient"></div>
+              </div>
+
+              <!-- Floating Live Stats Badges -->
+              <div class="floating-badge badge-top-right">
+                <div class="badge-icon"><i class="fa-solid fa-building-columns"></i></div>
+                <div class="badge-text">
+                  <span class="badge-title">October 6 Univ.</span>
+                  <span class="badge-sub">Data Science & AI Track</span>
+                </div>
+              </div>
+
+              <div class="floating-badge badge-bottom-left">
+                <div class="badge-icon pulse"><i class="fa-solid fa-brain"></i></div>
+                <div class="badge-text">
+                  <span class="badge-title">Career Goal</span>
+                  <span class="badge-sub">AI Engineer</span>
+                </div>
+              </div>
+
+              <div class="floating-badge badge-bottom-right">
+                <div class="badge-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                <div class="badge-text">
+                  <span class="badge-title">DEPI Initiative</span>
+                  <span class="badge-sub">AI & Data Science Track</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Bottom Metrics -->
+            <div class="hero-stats-strip">
+              <div class="stat-box">
+                <span class="stat-number">AI & Data</span>
+                <span class="stat-label">Core Focus</span>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat-box">
+                <span class="stat-number">5+</span>
+                <span class="stat-label">Verified Certs</span>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat-box">
+                <span class="stat-number">CS</span>
+                <span class="stat-label">Faculty Track</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section about-section">
+      <div class="section-container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-eyebrow">
+            <i class="fa-solid fa-user"></i>
+            <span>Who I Am</span>
+          </div>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+          <p class="section-subtitle">A technology-focused portfolio built around programming, data, AI, problem solving, and practical projects.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Column: Story -->
+          <div class="about-story glass-card reveal-on-scroll">
+            <h3 class="about-heading">
+              <i class="fa-solid fa-code text-cyan"></i>
+              Building Foundations in Programming & Intelligent Technologies
+            </h3>
+            <p>
+              I'm <strong>Mohanned Mohammed Galal Mohammed</strong>, focused on <strong>Data Science & AI</strong> and building a strong foundation in programming, analytics, and intelligent technologies.
+            </p>
+            <p>
+              I enjoy learning by building. My projects and training have helped me practice C++, digital systems, web technologies, logical thinking, and problem solving. I'm also expanding my knowledge through professional training and online courses.
+            </p>
+            <p>
+              My long-term goal is to become a professional <strong>AI Engineer</strong> and create intelligent solutions that make a real impact.
+            </p>
+
+            <div class="about-traits-grid">
+              <div class="trait-card">
+                <div class="trait-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                <div class="trait-info">
+                  <h4>Problem Solving</h4>
+                  <p>Developing logical algorithms and numerical methods to solve real problems.</p>
+                </div>
+              </div>
+              <div class="trait-card">
+                <div class="trait-icon"><i class="fa-solid fa-microchip"></i></div>
+                <div class="trait-info">
+                  <h4>Digital Systems</h4>
+                  <p>Practical understanding of hardware components and sensor interactions.</p>
+                </div>
+              </div>
+              <div class="trait-card">
+                <div class="trait-icon"><i class="fa-solid fa-chart-line"></i></div>
+                <div class="trait-info">
+                  <h4>Data & Analytics</h4>
+                  <p>Exploring data manipulation with Python, NumPy, Pandas, and analytical tools.</p>
+                </div>
+              </div>
+              <div class="trait-card">
+                <div class="trait-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div class="trait-info">
+                  <h4>Continuous Growth</h4>
+                  <p>Enrolled in DEPI and pursuing self-learning across top platforms.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Profile Snapshot -->
+          <div class="about-details-col reveal-on-scroll">
+            <div class="glass-card info-card">
+              <h3 class="info-card-title">
+                <i class="fa-solid fa-id-card text-violet"></i>
+                Profile Snapshot
+              </h3>
+              <ul class="info-list">
+                <li>
+                  <span class="info-label"><i class="fa-solid fa-user"></i> Full Name</span>
+                  <span class="info-val font-semibold">Mohanned Mohammed Galal Mohammed</span>
+                </li>
+                <li>
+                  <span class="info-label"><i class="fa-solid fa-crosshairs"></i> Focus</span>
+                  <span class="info-val badge-cyan">AI & Data Science</span>
+                </li>
+                <li>
+                  <span class="info-label"><i class="fa-solid fa-laptop-code"></i> Core</span>
+                  <span class="info-val">Programming & Analytics</span>
+                </li>
+                <li>
+                  <span class="info-label"><i class="fa-solid fa-brain"></i> Interests</span>
+                  <span class="info-val">Machine Learning & AI</span>
+                </li>
+                <li>
+                  <span class="info-label"><i class="fa-solid fa-bullseye"></i> Career Goal</span>
+                  <span class="info-val badge-accent">AI Engineer</span>
+                </li>
+                <li>
+                  <span class="info-label"><i class="fa-solid fa-building-columns"></i> University</span>
+                  <span class="info-val highlight-val">October 6 University</span>
+                </li>
+                <li>
+                  <span class="info-label"><i class="fa-solid fa-graduation-cap"></i> Degree Track</span>
+                  <span class="info-val">Computer Science &mdash; Data Science & AI</span>
+                </li>
+                <li>
+                  <span class="info-label"><i class="fa-solid fa-award text-emerald"></i> Training</span>
+                  <span class="info-val">DEPI AI & Data Science Track</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section skills-section">
+      <div class="section-container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-eyebrow">
+            <i class="fa-solid fa-gears"></i>
+            <span>Capabilities</span>
+          </div>
+          <h2 class="section-title">Skills & <span class="gradient-text">Toolkit</span></h2>
+          <p class="section-subtitle">A growing toolkit combining technical foundations with creativity and people skills.</p>
+        </div>
+
+        <!-- Skills Filter Tabs -->
+        <div class="skills-filter reveal-on-scroll">
+          <button class="skill-tab-btn active" data-filter="all">All Skills</button>
+          <button class="skill-tab-btn" data-filter="programming">Programming</button>
+          <button class="skill-tab-btn" data-filter="data-ai">Data & AI</button>
+          <button class="skill-tab-btn" data-filter="tools">Tools & Tech</button>
+          <button class="skill-tab-btn" data-filter="soft">Soft Skills</button>
+        </div>
+
+        <div class="skills-grid reveal-on-scroll">
+          <!-- Skill Card 1: Programming -->
+          <div class="skill-card glass-card" data-category="programming">
+            <div class="skill-header">
+              <div class="skill-icon-wrap bg-cyan-glow">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <div>
+                <h3 class="skill-title">Programming</h3>
+                <span class="skill-level">Core Fundamentals</span>
+              </div>
+            </div>
+            <p class="skill-desc">Core programming and web fundamentals built through rigorous practice.</p>
+            <div class="skill-tags">
+              <span class="skill-pill"><i class="fa-solid fa-terminal"></i> C++</span>
+              <span class="skill-pill"><i class="fa-brands fa-python"></i> Python</span>
+              <span class="skill-pill"><i class="fa-brands fa-html5"></i> HTML</span>
+              <span class="skill-pill"><i class="fa-solid fa-cubes"></i> OOP (Object-Oriented Programming)</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 2: Data & AI -->
+          <div class="skill-card glass-card" data-category="data-ai">
+            <div class="skill-header">
+              <div class="skill-icon-wrap bg-violet-glow">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <div>
+                <h3 class="skill-title">Data & AI</h3>
+                <span class="skill-level">Primary Focus</span>
+              </div>
+            </div>
+            <p class="skill-desc">Building foundations for future AI and data projects through academic and DEPI training.</p>
+            <div class="skill-tags">
+              <span class="skill-pill"><i class="fa-solid fa-database"></i> Data Science</span>
+              <span class="skill-pill"><i class="fa-solid fa-chart-pie"></i> Data Analytics</span>
+              <span class="skill-pill"><i class="fa-solid fa-network-wired"></i> Machine Learning</span>
+              <span class="skill-pill"><i class="fa-solid fa-square-root-variable"></i> NumPy</span>
+              <span class="skill-pill"><i class="fa-solid fa-table"></i> Pandas</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 3: Tools & Tech -->
+          <div class="skill-card glass-card" data-category="tools">
+            <div class="skill-header">
+              <div class="skill-icon-wrap bg-blue-glow">
+                <i class="fa-solid fa-toolbox"></i>
+              </div>
+              <div>
+                <h3 class="skill-title">Tools & Tech</h3>
+                <span class="skill-level">Practical Tools</span>
+              </div>
+            </div>
+            <p class="skill-desc">Practical tools used during university study, system simulation, and technical training.</p>
+            <div class="skill-tags">
+              <span class="skill-pill"><i class="fa-solid fa-file-excel"></i> Excel</span>
+              <span class="skill-pill"><i class="fa-solid fa-file-word"></i> Word</span>
+              <span class="skill-pill"><i class="fa-brands fa-linux"></i> Linux</span>
+              <span class="skill-pill"><i class="fa-solid fa-server"></i> VirtualBox</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 4: Soft Skills -->
+          <div class="skill-card glass-card" data-category="soft">
+            <div class="skill-header">
+              <div class="skill-icon-wrap bg-emerald-glow">
+                <i class="fa-solid fa-users-gear"></i>
+              </div>
+              <div>
+                <h3 class="skill-title">Soft Skills</h3>
+                <span class="skill-level">Collaboration & Leadership</span>
+              </div>
+            </div>
+            <p class="skill-desc">Creative and collaborative strengths essential for high-performing engineering teams.</p>
+            <div class="skill-tags">
+              <span class="skill-pill"><i class="fa-solid fa-compass"></i> Leadership</span>
+              <span class="skill-pill"><i class="fa-solid fa-wand-magic-sparkles"></i> Creativity</span>
+              <span class="skill-pill"><i class="fa-solid fa-puzzle-piece"></i> Problem Solving</span>
+              <span class="skill-pill"><i class="fa-solid fa-comments"></i> Communication</span>
+              <span class="skill-pill"><i class="fa-solid fa-handshake"></i> Teamwork</span>
+              <span class="skill-pill"><i class="fa-solid fa-pen-nib"></i> Writing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section projects-section">
+      <div class="section-container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-eyebrow">
+            <i class="fa-solid fa-laptop-code"></i>
+            <span>Hands-on Work</span>
+          </div>
+          <h2 class="section-title">Selected <span class="gradient-text">Projects</span></h2>
+          <p class="section-subtitle">Academic and personal projects demonstrating programming, logic, hardware, and web development.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Trapezoidal Rule Calculator -->
+          <article class="project-card glass-card reveal-on-scroll">
+            <div class="project-banner-header bg-math">
+              <span class="project-symbol">&int;</span>
+              <span class="project-domain-tag">C++ &bull; Math</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Trapezoidal Rule Calculator</h3>
+              <p class="project-desc">
+                A C++ program that calculates a definite integral using the numerical trapezoidal rule method. Implements mathematical formula approximation, step-interval calculations, and precise computation.
+              </p>
+              <div class="project-tech-stack">
+                <span>C++</span>
+                <span>Numerical Analysis</span>
+                <span>Math</span>
+                <span>Algorithms</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Automatic Light Sensor -->
+          <article class="project-card glass-card reveal-on-scroll">
+            <div class="project-banner-header bg-sensor">
+              <span class="project-symbol"><i class="fa-solid fa-lightbulb"></i></span>
+              <span class="project-domain-tag">Digital Systems &bull; Sensors</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Automatic Light Sensor</h3>
+              <p class="project-desc">
+                Digital systems project where the light responds automatically to the surrounding light condition. Explores hardware integration, sensor thresholds, circuit logic, and responsive behavior.
+              </p>
+              <div class="project-tech-stack">
+                <span>Digital Systems</span>
+                <span>Sensors</span>
+                <span>Hardware Logic</span>
+                <span>Circuits</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: C++ Calculator -->
+          <article class="project-card glass-card reveal-on-scroll">
+            <div class="project-banner-header bg-calc">
+              <span class="project-symbol">&plusmn;</span>
+              <span class="project-domain-tag">C++ &bull; OOP</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">C++ Calculator</h3>
+              <p class="project-desc">
+                A functional calculator developed in C++ to practice programming fundamentals, object-oriented principles, modular functions, and user input validation logic.
+              </p>
+              <div class="project-tech-stack">
+                <span>C++</span>
+                <span>OOP</span>
+                <span>Logic</span>
+                <span>Console Application</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Tic-Tac-Toe -->
+          <article class="project-card glass-card reveal-on-scroll">
+            <div class="project-banner-header bg-game">
+              <span class="project-symbol">XO</span>
+              <span class="project-domain-tag">C++ &bull; Game Logic</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Tic-Tac-Toe</h3>
+              <p class="project-desc">
+                A classic Tic-Tac-Toe game implemented in C++, focused on conditional branching, loops, win-condition evaluation algorithms, and game state management.
+              </p>
+              <div class="project-tech-stack">
+                <span>C++</span>
+                <span>Game Logic</span>
+                <span>Arrays</span>
+                <span>Control Flow</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: Dinosaur Game -->
+          <article class="project-card glass-card reveal-on-scroll">
+            <div class="project-banner-header bg-dino">
+              <span class="project-symbol"><i class="fa-solid fa-dragon"></i></span>
+              <span class="project-domain-tag">Web Development</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Dinosaur Game</h3>
+              <p class="project-desc">
+                A web-based dinosaur game inspired by the offline browser experience. Built with HTML, CSS, and JavaScript featuring jump mechanics, obstacle collision detection, and score tracking.
+              </p>
+              <div class="project-tech-stack">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Game Loop</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION & TRAINING SECTION -->
+    <section id="education" class="section education-section">
+      <div class="section-container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-eyebrow">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>Academic & Professional Track</span>
+          </div>
+          <h2 class="section-title">Education & <span class="gradient-text">Training</span></h2>
+          <p class="section-subtitle">Professional development, university studies, and hands-on technical training.</p>
+        </div>
+
+        <div class="education-timeline-grid reveal-on-scroll">
+          <!-- Item 1: October 6 University -->
+          <div class="timeline-box glass-card">
+            <div class="box-icon bg-cyan-glow"><i class="fa-solid fa-building-columns"></i></div>
+            <div class="box-header">
+              <span class="box-badge">University Education</span>
+              <h3 class="box-title">October 6 University</h3>
+              <h4 class="box-subtitle">Computer Science &mdash; Data Science & AI Track</h4>
+            </div>
+            <p class="box-text">
+              Academic undergraduate studies in Computer Science with a declared specialization track in Data Science and Artificial Intelligence.
+            </p>
+          </div>
+
+          <!-- Item 2: DEPI -->
+          <div class="timeline-box glass-card">
+            <div class="box-icon bg-violet-glow"><i class="fa-solid fa-award"></i></div>
+            <div class="box-header">
+              <span class="box-badge badge-depi">Professional Initiative</span>
+              <h3 class="box-title">Digital Egypt Pioneers Initiative (DEPI)</h3>
+              <h4 class="box-subtitle">AI & Data Science Track</h4>
+            </div>
+            <p class="box-text">
+              Specialized professional training program under DEPI focused on practical artificial intelligence and data science skills.
+            </p>
+          </div>
+
+          <!-- Item 3: MaharaTech / ITI -->
+          <div class="timeline-box glass-card">
+            <div class="box-icon bg-emerald-glow"><i class="fa-solid fa-chalkboard-user"></i></div>
+            <div class="box-header">
+              <span class="box-badge">Technical Training</span>
+              <h3 class="box-title">MaharaTech / ITI Training</h3>
+              <h4 class="box-subtitle">Practical Technology Courses</h4>
+            </div>
+            <p class="box-text">
+              Currently building practical technology skills through online training and applied coursework from Information Technology Institute (ITI).
+            </p>
+          </div>
+
+          <!-- Item 4: Self-Learning -->
+          <div class="timeline-box glass-card">
+            <div class="box-icon bg-blue-glow"><i class="fa-solid fa-book-open-reader"></i></div>
+            <div class="box-header">
+              <span class="box-badge">Continuous Learning</span>
+              <h3 class="box-title">Self-Learning</h3>
+              <h4 class="box-subtitle">Udemy & Coursera</h4>
+            </div>
+            <p class="box-text">
+              Continuously studying through platforms such as Udemy and Coursera. Additional certificates will be added as courses are completed.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATES SECTION -->
+    <section id="certificates" class="section certificates-section">
+      <div class="section-container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-eyebrow">
+            <i class="fa-solid fa-stamp"></i>
+            <span>Learning Milestones</span>
+          </div>
+          <h2 class="section-title">Certificates & <span class="gradient-text">Courses</span></h2>
+          <p class="section-subtitle">Completed learning milestones, with more currently in progress.</p>
+        </div>
+
+        <div class="certificates-grid-real">
+          <!-- Cert Group 1: MaharaTech -->
+          <div class="cert-item-card glass-card reveal-on-scroll">
+            <div class="cert-item-header">
+              <div class="cert-icon-circle bg-cyan-glow">
+                <i class="fa-solid fa-certificate"></i>
+              </div>
+              <div>
+                <span class="cert-status-badge completed"><i class="fa-solid fa-circle-check"></i> Completed</span>
+                <h3 class="cert-group-title">MaharaTech Certificates</h3>
+              </div>
+            </div>
+            <ul class="cert-courses-list">
+              <li>
+                <i class="fa-solid fa-check text-cyan"></i>
+                <div>
+                  <strong>GIS</strong>
+                  <span class="cert-provider">MaharaTech / Information Technology Institute (ITI)</span>
+                </div>
+              </li>
+              <li>
+                <i class="fa-solid fa-check text-cyan"></i>
+                <div>
+                  <strong>Introduction to Internet of Things (IoT)</strong>
+                  <span class="cert-provider">MaharaTech / Information Technology Institute (ITI)</span>
+                </div>
+              </li>
+            </ul>
+            <div class="cert-footer-tags">
+              <span class="cert-pill">MaharaTech</span>
+              <span class="cert-pill">GIS</span>
+              <span class="cert-pill">IoT</span>
+            </div>
+          </div>
+
+          <!-- Cert Group 2: HP LIFE -->
+          <div class="cert-item-card glass-card reveal-on-scroll">
+            <div class="cert-item-header">
+              <div class="cert-icon-circle bg-emerald-glow">
+                <i class="fa-solid fa-award"></i>
+              </div>
+              <div>
+                <span class="cert-status-badge completed"><i class="fa-solid fa-circle-check"></i> Completed</span>
+                <h3 class="cert-group-title">HP LIFE Certificates</h3>
+              </div>
+            </div>
+            <ul class="cert-courses-list">
+              <li>
+                <i class="fa-solid fa-check text-emerald"></i>
+                <div>
+                  <strong>Introduction to Cybersecurity</strong>
+                  <span class="cert-provider">HP LIFE Global Training Program</span>
+                </div>
+              </li>
+              <li>
+                <i class="fa-solid fa-check text-emerald"></i>
+                <div>
+                  <strong>Data Science & Data Analytics</strong>
+                  <span class="cert-provider">HP LIFE Global Training Program</span>
+                </div>
+              </li>
+              <li>
+                <i class="fa-solid fa-check text-emerald"></i>
+                <div>
+                  <strong>Social Media Marketing</strong>
+                  <span class="cert-provider">HP LIFE Global Training Program</span>
+                </div>
+              </li>
+            </ul>
+            <div class="cert-footer-tags">
+              <span class="cert-pill">HP LIFE</span>
+              <span class="cert-pill">Cybersecurity</span>
+              <span class="cert-pill">Data Analytics</span>
+            </div>
+          </div>
+
+          <!-- Cert Group 3: In Progress (Coursera & Udemy) -->
+          <div class="cert-item-card glass-card in-progress-card reveal-on-scroll">
+            <div class="cert-item-header">
+              <div class="cert-icon-circle bg-violet-glow">
+                <i class="fa-solid fa-hourglass-half"></i>
+              </div>
+              <div>
+                <span class="cert-status-badge in-progress"><i class="fa-solid fa-spinner fa-spin"></i> In Progress</span>
+                <h3 class="cert-group-title">Certificates in Progress</h3>
+              </div>
+            </div>
+            <p class="cert-progress-text">
+              Additional courses on <strong>Udemy</strong> and <strong>Coursera</strong> are currently in progress. New certificates will be added here upon official completion.
+            </p>
+            <div class="in-progress-tracker">
+              <div class="tracker-info">
+                <span>Active Continuous Study</span>
+                <span class="text-violet">Ongoing</span>
+              </div>
+              <div class="tracker-bar">
+                <div class="tracker-fill"></div>
+              </div>
+            </div>
+            <div class="cert-footer-tags">
+              <span class="cert-pill">Udemy (In Progress)</span>
+              <span class="cert-pill">Coursera (In Progress)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LANGUAGES SECTION -->
+    <section id="languages" class="section languages-section">
+      <div class="section-container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-eyebrow">
+            <i class="fa-solid fa-language"></i>
+            <span>Communication</span>
+          </div>
+          <h2 class="section-title">Languages & <span class="gradient-text">Proficiency</span></h2>
+          <p class="section-subtitle">Multilingual abilities supporting global communication and collaborative growth.</p>
+        </div>
+
+        <div class="languages-grid reveal-on-scroll">
+          <div class="lang-box glass-card">
+            <div class="lang-flag"><i class="fa-solid fa-earth-africa"></i></div>
+            <div class="lang-info">
+              <h3 class="lang-name">Arabic</h3>
+              <span class="lang-level native">Native</span>
+            </div>
+          </div>
+
+          <div class="lang-box glass-card">
+            <div class="lang-flag"><i class="fa-solid fa-earth-americas"></i></div>
+            <div class="lang-info">
+              <h3 class="lang-name">English</h3>
+              <span class="lang-level c1">C1 &mdash; Advanced</span>
+            </div>
+          </div>
+
+          <div class="lang-box glass-card">
+            <div class="lang-flag"><i class="fa-solid fa-earth-europe"></i></div>
+            <div class="lang-info">
+              <h3 class="lang-name">French</h3>
+              <span class="lang-level a2">A2 &mdash; Elementary</span>
+            </div>
+          </div>
+
+          <div class="lang-box glass-card">
+            <div class="lang-flag"><i class="fa-solid fa-earth-asia"></i></div>
+            <div class="lang-info">
+              <h3 class="lang-name">Turkish</h3>
+              <span class="lang-level a2">A2 &mdash; Elementary</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section contact-section">
+      <div class="section-container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-eyebrow">
+            <i class="fa-solid fa-envelope-open-text"></i>
+            <span>Collaboration</span>
+          </div>
+          <h2 class="section-title">Let's Build Something <span class="gradient-text">Great</span></h2>
+          <p class="section-subtitle">Open to learning opportunities, collaborations, and meaningful projects in technology, AI, and data.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Contact Details -->
+          <div class="contact-info-col reveal-on-scroll">
+            <div class="glass-card contact-details-card">
+              <h3 class="contact-card-title">Connect with Mohanned Mohammed Galal Mohammed</h3>
+              <p class="contact-intro">
+                Feel free to reach out directly via Email, LinkedIn, WhatsApp, or through the contact form.
+              </p>
+
+              <div class="contact-channels">
+                <a href="mailto:mohannedelzainy@gmail.com" class="channel-card">
+                  <div class="channel-icon bg-cyan-glow">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div class="channel-details">
+                    <span class="channel-label">Email Me</span>
+                    <span class="channel-val">mohannedelzainy@gmail.com</span>
+                  </div>
+                  <i class="fa-solid fa-arrow-up-right-from-square channel-arrow"></i>
+                </a>
+
+                <a href="https://wa.me/201159495931" target="_blank" rel="noopener noreferrer" class="channel-card">
+                  <div class="channel-icon bg-emerald-glow">
+                    <i class="fa-brands fa-whatsapp"></i>
+                  </div>
+                  <div class="channel-details">
+                    <span class="channel-label">WhatsApp</span>
+                    <span class="channel-val">+20 115 949 5931</span>
+                  </div>
+                  <i class="fa-solid fa-arrow-up-right-from-square channel-arrow"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/mohanned-galal-0a018b415" target="_blank" rel="noopener noreferrer" class="channel-card">
+                  <div class="channel-icon bg-violet-glow">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </div>
+                  <div class="channel-details">
+                    <span class="channel-label">LinkedIn</span>
+                    <span class="channel-val">mohanned-galal</span>
+                  </div>
+                  <i class="fa-solid fa-arrow-up-right-from-square channel-arrow"></i>
+                </a>
+
+                <a href="https://github.com/mohannedelzainy-ctrl" target="_blank" rel="noopener noreferrer" class="channel-card">
+                  <div class="channel-icon bg-blue-glow">
+                    <i class="fa-brands fa-github"></i>
+                  </div>
+                  <div class="channel-details">
+                    <span class="channel-label">GitHub</span>
+                    <span class="channel-val">mohannedelzainy-ctrl</span>
+                  </div>
+                  <i class="fa-solid fa-arrow-up-right-from-square channel-arrow"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Contact Form -->
+          <div class="contact-form-col reveal-on-scroll">
+            <div class="glass-card contact-form-card">
+              <h3 class="form-title">Send a Message</h3>
+              <form id="contactForm" class="contact-form" novalidate>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="name" class="form-label">Your Name</label>
+                    <div class="input-wrap">
+                      <i class="fa-solid fa-user input-icon"></i>
+                      <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required>
+                    </div>
+                    <span class="error-msg" id="nameError">Please enter your name.</span>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="email" class="form-label">Your Email</label>
+                    <div class="input-wrap">
+                      <i class="fa-solid fa-envelope input-icon"></i>
+                      <input type="email" id="email" name="email" class="form-input" placeholder="you@example.com" required>
+                    </div>
+                    <span class="error-msg" id="emailError">Please enter a valid email address.</span>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="subject" class="form-label">Subject</label>
+                  <div class="input-wrap">
+                    <i class="fa-solid fa-tag input-icon"></i>
+                    <select id="subject" name="subject" class="form-input form-select" required>
+                      <option value="" disabled selected>Select a subject...</option>
+                      <option value="Collaboration Opportunity">Collaboration Opportunity</option>
+                      <option value="Learning / Internship">Learning / Internship Opportunity</option>
+                      <option value="General Inquiry">General Inquiry</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="message" class="form-label">Message Details</label>
+                  <div class="input-wrap textarea-wrap">
+                    <i class="fa-solid fa-message input-icon"></i>
+                    <textarea id="message" name="message" rows="5" class="form-input form-textarea" placeholder="Your message..." required></textarea>
+                  </div>
+                  <span class="error-msg" id="messageError">Please enter your message (at least 8 characters).</span>
+                </div>
+
+                <button type="submit" id="submitBtn" class="btn btn-primary w-full">
+                  <span class="btn-text">Send Message</span>
+                  <i class="fa-solid fa-paper-plane"></i>
+                </button>
+              </form>
+
+              <!-- Form Success Toast Notification -->
+              <div id="formSuccessToast" class="form-toast hidden" role="alert">
+                <i class="fa-solid fa-circle-check toast-icon"></i>
+                <div class="toast-body">
+                  <strong>Message Sent Successfully!</strong>
+                  <p>Thank you for reaching out, Mohanned Mohammed Galal Mohammed will get back to you shortly.</p>
+                </div>
+                <button type="button" class="toast-close" onclick="closeToast()">&times;</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="section-container footer-content">
+      <div class="footer-left">
+        <a href="#hero" class="brand-logo footer-brand">
+          <span class="brand-icon">MG</span>
+          <span class="brand-name">Mohanned Mohammed Galal Mohammed</span>
+        </a>
+        <p class="footer-tagline">
+          October 6 University &bull; Computer Science &bull; Data Science & AI Track
+        </p>
+      </div>
+
+      <div class="footer-nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#languages">Languages</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-right">
+        <p>&copy; <span id="currentYear">2026</span> Mohanned Mohammed Galal Mohammed. All rights reserved.</p>
+        <p class="footer-sub">Built with curiosity, creativity, and code.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll To Top Button -->
+  <button id="scrollToTopBtn" class="scroll-top-btn" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+    <svg class="progress-ring" width="48" height="48">
+      <circle class="progress-ring-circle" stroke="url(#gradient-ring)" stroke-width="3" fill="transparent" r="21" cx="24" cy="24"/>
+      <defs>
+        <linearGradient id="gradient-ring" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#00f2fe" />
+          <stop offset="100%" stop-color="#7928ca" />
+        </linearGradient>
+      </defs>
+    </svg>
+  </button>
+
+  <!-- Custom Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
